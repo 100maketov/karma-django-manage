@@ -2,14 +2,14 @@
     "name": "karma-django-manage",
     "main": "index",
     "description": "Call Django manage.py command before test runs.",
-    "version": "0.9.2",
+    "version": "0.9.3",
     "repository": {
         "type": "git",
-        "url": "http://github.com/TiMirLAN/karma-django-manage"
+        "url": "http://github.com/a-iv/karma-django-manage"
     },
     "keywords": ["karma-plugin", "django"],
     "dependencies": {
         "karma": ">=0.9",
-        "node-pipedexec": "TiMirLAN/node-pipedexec"
+        "node-pipedexec": "a-iv/node-pipedexec"
     }
 }

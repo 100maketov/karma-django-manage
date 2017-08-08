@@ -6,7 +6,7 @@ Call Django manage.py command before test runs.
 Install
 -------
 
-Run `npm install TiMirLAN/karma-django-manage`
+Run `npm install a-iv/karma-django-manage`
 
 Usage
 -----
