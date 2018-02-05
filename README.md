@@ -6,7 +6,7 @@ Call Django manage.py command before test runs.
 Install
 -------
 
-Run `npm install a-iv/karma-django-manage`
+Run `npm install 100maketov/karma-django-manage`
 
 Usage
 -----
