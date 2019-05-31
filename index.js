@@ -22,16 +22,6 @@ var djangoManagepyRunner = function (config, baseDir, files) {
         return execSync(python + ' ' + manage + ' ' + args, {encoding: 'utf-8'});
     }
 
-    if (config.command) {
-        config.commands.forEach(function (command) {
-            if (config.silent) {
-                callManagepy(command);
-            } else {
-                console.log(callManagepy(command).out);
-            }
-        });
-    }
-
     if (config.appendToFiles) {
         config.appendToFiles.forEach(function (command) {
             files.push({
