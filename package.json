@@ -9,7 +9,6 @@
     },
     "keywords": ["karma-plugin", "django"],
     "dependencies": {
-        "karma": ">=0.9",
-        "node-pipedexec": "100maketov/node-pipedexec"
+        "karma": ">=0.9"
     }
 }
