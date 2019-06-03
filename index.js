@@ -4,7 +4,7 @@
 /*jslint node:true, nomen:true */
 /*global console, __dirname */
 var path = require('path'),
-    pse = require('node-pipedexec');
+    execSync = require('child_process').execSync;
 
 
 var djangoManagepyRunner = function (config, baseDir, files) {
@@ -19,23 +19,13 @@ var djangoManagepyRunner = function (config, baseDir, files) {
         manage = path.join(baseDir, config.manageFile || 'manage.py');
 
     function callManagepy(args) {
-        return pse.exec.apply(null, [python, manage].concat(args.split(' ')));
-    }
-
-    if (config.command) {
-        config.commands.forEach(function (command) {
-            if (config.silent) {
-                callManagepy(command);
-            } else {
-                console.log(callManagepy(command).out);
-            }
-        });
+        return execSync(python + ' ' + manage + ' ' + args, {encoding: 'utf-8'});
     }
 
     if (config.appendToFiles) {
         config.appendToFiles.forEach(function (command) {
             files.push({
-                pattern: path.resolve(baseDir, callManagepy(command).out),
+                pattern: path.resolve(baseDir, callManagepy(command)),
                 included: true,
                 served: true,
                 watched: false

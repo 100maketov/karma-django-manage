@@ -2,14 +2,13 @@
     "name": "karma-django-manage",
     "main": "index",
     "description": "Call Django manage.py command before test runs.",
-    "version": "0.9.4",
+    "version": "0.10.0",
     "repository": {
         "type": "git",
         "url": "http://github.com/100maketov/karma-django-manage"
     },
     "keywords": ["karma-plugin", "django"],
     "dependencies": {
-        "karma": ">=0.9",
-        "node-pipedexec": "100maketov/node-pipedexec"
+        "karma": ">=0.9"
     }
 }
