@@ -2,7 +2,8 @@
     "name": "karma-django-manage",
     "main": "index",
     "description": "Call Django manage.py command before test runs.",
-    "version": "0.10.0",
+    "version": "0.10.1",
+    "files": ["index.js"],
     "repository": {
         "type": "git",
         "url": "http://github.com/100maketov/karma-django-manage"
